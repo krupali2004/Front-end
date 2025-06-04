@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media and Shapes</title>
+  <style>
+    canvas {
+      border: 1px solid #000;
+      margin: 10px 0;
+    }
+    svg {
+      border: 1px solid #000;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Audio Tag -->
+  <h2>Audio</h2>
+  <audio src="/audio/PanchMahotsav_2015_-_Pavagadh_-_Champaner_-_Festival_of_Culture_and_Heritage(256k).mp3" autoplay loop muted controls></audio>
+
+  <!-- Video Tag -->
+  <h2>Video</h2>
+  <video src="/video/Deva_Deva_-_Film_Version__Brahmāstra__Amitabh_B_Ranbir__@aliabhatt__Pritam_Arijit(480p).mp4" width="320" height="240" autoplay loop muted controls></video>
+
+  <!-- Canvas Tag -->
+  <h2>Canvas Shapes</h2>
+  <canvas id="myCanvas" width="300" height="200"></canvas>
+
+  <script>
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Rectangle
+    ctx.fillStyle = 'blue';
+    ctx.fillRect(10, 10, 100, 50);
+
+    // Circle
+    ctx.beginPath();
+    ctx.arc(150, 50, 30, 0, 2 * Math.PI);
+    ctx.fillStyle = 'green';
+    ctx.fill();
+
+    // Line
+    ctx.beginPath();
+    ctx.moveTo(200, 150);
+    ctx.lineTo(280, 150);
+    ctx.strokeStyle = 'red';
+    ctx.stroke();
+  </script>
+
+  <!-- SVG Tag -->
+  <h2>SVG Shapes</h2>
+  <svg width="300" height="200">
+    <!-- Rectangle -->
+    <rect x="10" y="10" width="100" height="50" fill="blue" />
+    
+    <!-- Circle -->
+    <circle cx="180" cy="40" r="30" fill="green" />
+    
+    <!-- Line -->
+    <line x1="200" y1="150" x2="280" y2="150" stroke="red" stroke-width="2" />
+  </svg>
+
+</body>
+</html>

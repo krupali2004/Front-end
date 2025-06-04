@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #contact-form {
+      background-color: purple;
+      border: 1px solid #ccc;
+      width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      box-shadow:  rgba(0, 0, 0, 0.1);
+    }
+    .form-heading {
+      text-align: center;
+      font-size: 1.5em;
+      color:  aqua;
+      margin-bottom: 20px;
+    }
+    .form-field {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid black;
+      border-radius: 4px;
+      font-size: 1em;
+      background-color: #fff;
+    }
+    #submit-button {
+      background-color: green;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      width: 100%;
+    }
+    #submit-button:hover {
+      background-color: greenyellow;
+      transform: scale(1.02);
+    }
+    label {
+      font-size: 0.9em;
+      color:    aqua;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+  </style>
+</head>
+<body>
+  <form id="contact-form">
+    <h2 class="form-heading">Contact Us</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" class="form-field" placeholder="Enter your name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" class="form-field" placeholder="Enter your email" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" class="form-field" placeholder="Write your message" required></textarea>
+    
+    <button type="submit" id="submit-button">Submit</button>
+  </form>
+</body>
+</html>

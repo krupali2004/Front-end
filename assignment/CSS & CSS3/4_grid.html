@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product grid</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: white;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.1);
+        }
+        .product-card{
+            background: whitesmoke;
+            border: 1px solid white;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .product-card:hover{
+            transform: translateY(-5px);
+
+        }
+        .product-img{
+            width: 50px;
+            height: 200px;
+
+        }
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .product-price {
+            font-size: 1rem;
+            color: black;
+            margin-bottom: 10px;
+        }
+        .product-card p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="product-card">
+            <img src="/img/watch.jpg" alt="product-1" class="product=img">
+            <p class="product title">product-1</p>
+            <p class="product-price">$15.00</p>
+        </div>
+        <div class="product-card">
+            <img src="/img/watch.jpg" alt="product-2" class="product=img">
+            <p class="product title">product-2</p>
+            <p class="product-price">$20.00</p>
+        </div>
+        <div class="product-card">
+            <img src="/img/watch.jpg" alt="product-3" class="product=img">
+            <p class="product title">product-3</p>
+            <p class="product-price">$15.00</p>
+        </div>
+        <div class="product-card">
+            <img src="/img/watch.jpg" alt="product-4" class="product=img">
+            <p class="product title">product-4</p>
+            <p class="product-price">$17.00</p>
+        </div>
+        <div class="product-card">
+            <img src="/img/watch.jpg" alt="product-5" class="product=img">
+            <p class="product title">product-5</p>
+            <p class="product-price">$18.00</p>
+        </div>
+        <div class="product-card">
+            <img src="/img/watch.jpg" alt="product-6" class="product=img">
+            <p class="product title">product-6</p>
+            <p class="product-price">$10.00</p>
+        </div>
+        <div class="product-card">
+            <img src="/img/watch.jpg" alt="product-7" class="product=img">
+            <p class="product title">product-7</p>
+            <p class="product-price">$22.00</p>
+        </div>
+        <div class="product-card">
+            <img src="img/watch.jpg" alt="product-8" class="product=img">
+            <p class="product title">product-8</p>
+            <p class="product-price">$25.00</p>
+        </div>
+        <div class="product-card">
+            <img src="/img/watch.jpg" alt="product-9" class="product=img">
+            <p class="product title">product-9</p>
+            <p class="product-price">$21.00</p>
+        </div>
+    </div>
+</body>
+</html>

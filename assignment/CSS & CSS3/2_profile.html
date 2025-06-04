@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f9;
+    }
+
+    .profile-card {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 300px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #4caf50;
+      margin-bottom: 15px;
+    }
+
+    .user-name {
+      font-size: 1.5rem;
+      color: #333;
+      margin: 10px 0 5px;
+    }
+
+    .user-bio {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .follow-btn {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .follow-btn:hover {
+      background-color: greenyellow;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="profile-card">
+    <img src="girl.jpg" alt="Profile Picture" class="profile-pic">
+    <h2 class="user-name">itz_jasmine</h2>
+    <p class="user-bio">Web developer and tech enthusiast. Passionate about creating beautiful and functional web
+      experiences.</p>
+    <button class="follow-btn">Follow</button>
+  </div>
+</body>
+
+</html>
