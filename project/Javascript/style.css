@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:white;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+.container{
+    max-width: 600px;
+    margin:100px auto;
+    padding: 20px 5px;
+    background: linear-gradient(orange,white , green);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: black;
+}
+.row{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    margin-right: 10px;
+}
+input[type="number"]{
+    padding: 10px;
+    font-size: 15px;
+    width: 100px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid blue;
+    font-weight: 600;
+}
+input[type="number"]:focus {
+    border-color: blue;
+    outline: none;
+    box-shadow:  0 0 0 2px blue;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.cash-text{
+    font-weight: bold;
+    margin-left: 10px;
+    width:40px;
+    display: inline-block;
+    text-align: center;
+    color: black;
+}
+input[type="submit"]{
+    padding: 10px 10px;
+    width: 250px;
+    font-size: 16px;
+     margin: 2px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+}
+input[type="submit"]:hover{
+    background-color:  rgb(60, 60, 210);
+}
+button{
+    padding: 10px 20px;
+    width: 250px;
+    font-size: 16px;
+    margin: 2px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+}
+button:hover{
+    background-color: rgb(60, 60, 210);
+}
+#txtFinalCash{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+}
+#txtFinalCashInWords{
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+.result-part{
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+}
