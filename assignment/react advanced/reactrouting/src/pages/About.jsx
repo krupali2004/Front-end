@@ -3,8 +3,8 @@ import React from 'react'
 function About() {
   return (
     <div>
-      <h2>About Page</h2>
-      <p>This is the About page of the application.</p>
+        <h1>About Page</h1>
+        <p>hello this is a About page.</p>
     </div>
   )
 }
